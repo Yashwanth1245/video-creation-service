@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<body>
+    <h1>Upload Files for Video Creation</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="files[]" multiple>
+        <br><br>
+        Transition Type:
+        <select name="transition_type">
+            <option value="fade">Fade</option>
+            <option value="fade_black">Fade to Black</option>
+            <option value="slide_left">Slide Left</option>
+            <option value="slide_right">Slide Right</option>
+        </select>
+        <br><br>
+        Clip Duration (seconds): <input type="number" name="clip_duration" value="5" step="0.1">
+        <br><br>
+        Transition Duration (seconds): <input type="number" name="transition_duration" value="1" step="0.1">
+        <br><br>
+        <input type="submit" value="Create Video">
+    </form>
+</body>
+</html>
